@@ -1,0 +1,8 @@
+training_outputs/* filter=lfs diff=lfs merge=lfs -text
+training_outputs/dataset_stats/*.png filter=lfs diff=lfs merge=lfs -text
+training_outputs/dataset_stats/*.txt filter=lfs diff=lfs merge=lfs -text
+training_outputs/metrics/*.txt filter=lfs diff=lfs merge=lfs -text
+training_outputs/metrics/*.json filter=lfs diff=lfs merge=lfs -text
+training_outputs/models/*.keras filter=lfs diff=lfs merge=lfs -text
+training_outputs/models/*.h5 filter=lfs diff=lfs merge=lfs -text
+training_outputs/plots/*.png filter=lfs diff=lfs merge=lfs -text
