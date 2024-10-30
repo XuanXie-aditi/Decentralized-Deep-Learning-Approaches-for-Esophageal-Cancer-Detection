@@ -1,0 +1,187 @@
+python main.py
+PS C:\Users\padma\OneDrive - vitap.ac.in\cappy> python main.py
+2024-10-29 10:26:05.460945: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different 
+numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.                                                                                           2024-10-29 10:26:07.034019: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different 
+numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.                                                                                           
+Loading and preprocessing data...
+C:\Users\padma\OneDrive - vitap.ac.in\cappy\data_loader.py:204: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set
+ `legend=False` for the same effect.                                                                                            
+  sns.countplot(x=labels, palette=palette)
+Dataset statistics saved to training_outputs\dataset_stats\dataset_statistics.txt
+Data preprocessing completed!
+
+Training and evaluating models...
+
+Training ResNet50
+2024-10-29 10:45:08.478330: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use avai
+lable CPU instructions in performance-critical operations.                                                                      To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler f
+lags.                                                                                                                           Epoch 1/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 935s 5s/step - classification_accuracy: 0.8634 - loss: 0.7125 - segmentation_accuracy: 0.5260 - val
+_classification_accuracy: 0.8960 - val_loss: 0.6073 - val_segmentation_accuracy: 0.9619                                         Epoch 2/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 656s 3s/step - classification_accuracy: 0.9047 - loss: 0.4801 - segmentation_accuracy: 0.9967 - val
+_classification_accuracy: 0.8960 - val_loss: 0.4626 - val_segmentation_accuracy: 0.9987                                         Epoch 3/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 640s 3s/step - classification_accuracy: 0.9002 - loss: 0.4151 - segmentation_accuracy: 0.9996 - val
+_classification_accuracy: 0.8960 - val_loss: 0.3864 - val_segmentation_accuracy: 0.9997                                         Epoch 4/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 708s 4s/step - classification_accuracy: 0.9114 - loss: 0.3561 - segmentation_accuracy: 0.9998 - val
+_classification_accuracy: 0.9041 - val_loss: 0.3200 - val_segmentation_accuracy: 0.9998                                         Epoch 5/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1092s 5s/step - classification_accuracy: 0.9144 - loss: 0.3154 - segmentation_accuracy: 0.9998 - va
+l_classification_accuracy: 0.9248 - val_loss: 0.2778 - val_segmentation_accuracy: 0.9998                                        Epoch 6/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1012s 5s/step - classification_accuracy: 0.9270 - loss: 0.2874 - segmentation_accuracy: 0.9998 - va
+l_classification_accuracy: 0.9336 - val_loss: 0.2514 - val_segmentation_accuracy: 0.9998                                        Epoch 7/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1060s 5s/step - classification_accuracy: 0.9344 - loss: 0.2603 - segmentation_accuracy: 0.9998 - va
+l_classification_accuracy: 0.9361 - val_loss: 0.2316 - val_segmentation_accuracy: 0.9998                                        Epoch 8/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1014s 5s/step - classification_accuracy: 0.9334 - loss: 0.2474 - segmentation_accuracy: 0.9998 - va
+l_classification_accuracy: 0.9386 - val_loss: 0.2174 - val_segmentation_accuracy: 0.9998                                        Epoch 9/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 900s 4s/step - classification_accuracy: 0.9419 - loss: 0.2232 - segmentation_accuracy: 0.9998 - val
+_classification_accuracy: 0.9442 - val_loss: 0.2030 - val_segmentation_accuracy: 0.9998                                         Epoch 10/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 843s 4s/step - classification_accuracy: 0.9406 - loss: 0.2180 - segmentation_accuracy: 0.9998 - val
+_classification_accuracy: 0.9323 - val_loss: 0.2112 - val_segmentation_accuracy: 0.9998                                         63/63 ━━━━━━━━━━━━━━━━━━━━ 160s 2s/step
+63/63 ━━━━━━━━━━━━━━━━━━━━ 147s 2s/step - classification_accuracy: 0.9319 - loss: 0.2150 - segmentation_accuracy: 0.9998
+
+Training VGG16
+Epoch 1/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 2282s 11s/step - classification_accuracy: 0.8894 - loss: 0.5868 - segmentation_accuracy: 0.8416 - v
+al_classification_accuracy: 0.9480 - val_loss: 0.4057 - val_segmentation_accuracy: 0.9751                                       Epoch 2/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 2243s 11s/step - classification_accuracy: 0.9379 - loss: 0.2815 - segmentation_accuracy: 0.9988 - v
+al_classification_accuracy: 0.9574 - val_loss: 0.2498 - val_segmentation_accuracy: 0.9911                                       Epoch 3/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1794s 9s/step - classification_accuracy: 0.9627 - loss: 0.1981 - segmentation_accuracy: 1.0000 - va
+l_classification_accuracy: 0.9662 - val_loss: 0.1871 - val_segmentation_accuracy: 1.0000                                        Epoch 4/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1336s 7s/step - classification_accuracy: 0.9640 - loss: 0.1657 - segmentation_accuracy: 1.0000 - va
+l_classification_accuracy: 0.9674 - val_loss: 0.1585 - val_segmentation_accuracy: 1.0000                                        Epoch 5/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 2091s 10s/step - classification_accuracy: 0.9688 - loss: 0.1486 - segmentation_accuracy: 1.0000 - v
+al_classification_accuracy: 0.9680 - val_loss: 0.1415 - val_segmentation_accuracy: 1.0000                                       Epoch 6/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1803s 9s/step - classification_accuracy: 0.9729 - loss: 0.1282 - segmentation_accuracy: 1.0000 - va
+l_classification_accuracy: 0.9706 - val_loss: 0.1282 - val_segmentation_accuracy: 1.0000                                        Epoch 7/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1398s 7s/step - classification_accuracy: 0.9719 - loss: 0.1208 - segmentation_accuracy: 1.0000 - va
+l_classification_accuracy: 0.9668 - val_loss: 0.1273 - val_segmentation_accuracy: 1.0000                                        Epoch 8/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1523s 8s/step - classification_accuracy: 0.9766 - loss: 0.1092 - segmentation_accuracy: 1.0000 - va
+l_classification_accuracy: 0.9724 - val_loss: 0.1141 - val_segmentation_accuracy: 1.0000                                        Epoch 9/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 1358s 7s/step - classification_accuracy: 0.9816 - loss: 0.0895 - segmentation_accuracy: 1.0000 - va
+l_classification_accuracy: 0.9655 - val_loss: 0.1205 - val_segmentation_accuracy: 1.0000                                        Epoch 10/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 2185s 11s/step - classification_accuracy: 0.9813 - loss: 0.0871 - segmentation_accuracy: 1.0000 - v
+al_classification_accuracy: 0.9756 - val_loss: 0.0956 - val_segmentation_accuracy: 1.0000                                       63/63 ━━━━━━━━━━━━━━━━━━━━ 451s 7s/step  
+63/63 ━━━━━━━━━━━━━━━━━━━━ 321s 5s/step - classification_accuracy: 0.9768 - loss: 0.0998 - segmentation_accuracy: 1.0000
+
+Training DenseNet121
+Epoch 1/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 806s 4s/step - classification_accuracy: 0.9347 - loss: 0.4870 - segmentation_accuracy: 0.8004 - val
+_classification_accuracy: 0.9799 - val_loss: 0.3349 - val_segmentation_accuracy: 0.9806                                         Epoch 2/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 625s 3s/step - classification_accuracy: 0.9852 - loss: 0.2440 - segmentation_accuracy: 0.9951 - val
+_classification_accuracy: 0.9887 - val_loss: 0.2337 - val_segmentation_accuracy: 0.9975                                         Epoch 3/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 855s 4s/step - classification_accuracy: 0.9928 - loss: 0.1920 - segmentation_accuracy: 0.9989 - val
+_classification_accuracy: 0.9881 - val_loss: 0.1814 - val_segmentation_accuracy: 0.9996                                         Epoch 4/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 697s 3s/step - classification_accuracy: 0.9922 - loss: 0.1686 - segmentation_accuracy: 0.9998 - val
+_classification_accuracy: 0.9875 - val_loss: 0.1577 - val_segmentation_accuracy: 0.9999                                         Epoch 5/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 926s 5s/step - classification_accuracy: 0.9941 - loss: 0.1455 - segmentation_accuracy: 0.9999 - val
+_classification_accuracy: 0.9925 - val_loss: 0.1354 - val_segmentation_accuracy: 1.0000                                         Epoch 6/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 873s 4s/step - classification_accuracy: 0.9963 - loss: 0.1245 - segmentation_accuracy: 1.0000 - val
+_classification_accuracy: 0.9912 - val_loss: 0.1210 - val_segmentation_accuracy: 1.0000                                         Epoch 7/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 719s 4s/step - classification_accuracy: 0.9977 - loss: 0.1066 - segmentation_accuracy: 1.0000 - val
+_classification_accuracy: 0.9912 - val_loss: 0.1077 - val_segmentation_accuracy: 1.0000                                         Epoch 8/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 723s 4s/step - classification_accuracy: 0.9958 - loss: 0.0949 - segmentation_accuracy: 1.0000 - val
+_classification_accuracy: 0.9919 - val_loss: 0.0941 - val_segmentation_accuracy: 1.0000                                         Epoch 9/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 635s 3s/step - classification_accuracy: 0.9971 - loss: 0.0810 - segmentation_accuracy: 1.0000 - val
+_classification_accuracy: 0.9919 - val_loss: 0.0852 - val_segmentation_accuracy: 1.0000                                         Epoch 10/10
+200/200 ━━━━━━━━━━━━━━━━━━━━ 569s 3s/step - classification_accuracy: 0.9974 - loss: 0.0719 - segmentation_accuracy: 1.0000 - val
+_classification_accuracy: 0.9919 - val_loss: 0.0771 - val_segmentation_accuracy: 1.0000                                         63/63 ━━━━━━━━━━━━━━━━━━━━ 131s 2s/step
+63/63 ━━━━━━━━━━━━━━━━━━━━ 118s 2s/step - classification_accuracy: 0.9950 - loss: 0.0698 - segmentation_accuracy: 1.0000
+
+Best performing model: DenseNet121
+Best model metrics saved in: training_outputs\metrics
+Visualization plots saved in: training_outputs\plots
+
+Performing federated learning simulation...
+
+Federated Learning Round 1
+Training on client 1
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 258s 2s/step - classification_accuracy: 0.9917 - loss: 0.0799 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 226s 2s/step - classification_accuracy: 0.9918 - loss: 0.0688 - segmentation_accuracy: 1.0000
+Training on client 2
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 267s 2s/step - classification_accuracy: 1.0000 - loss: 0.0557 - segmentation_accuracy: 1.0000      
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 256s 2s/step - classification_accuracy: 1.0000 - loss: 0.0503 - segmentation_accuracy: 1.0000
+Training on client 3
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 268s 2s/step - classification_accuracy: 1.0000 - loss: 0.0560 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 237s 2s/step - classification_accuracy: 1.0000 - loss: 0.0503 - segmentation_accuracy: 1.0000
+
+Federated Learning Round 2
+Training on client 1
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 262s 2s/step - classification_accuracy: 0.9799 - loss: 0.1017 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 239s 2s/step - classification_accuracy: 0.9958 - loss: 0.0542 - segmentation_accuracy: 1.0000
+Training on client 2
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 279s 2s/step - classification_accuracy: 1.0000 - loss: 0.0456 - segmentation_accuracy: 1.0000    
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 244s 2s/step - classification_accuracy: 1.0000 - loss: 0.0411 - segmentation_accuracy: 1.0000
+Training on client 3
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 273s 2s/step - classification_accuracy: 1.0000 - loss: 0.0456 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 247s 2s/step - classification_accuracy: 1.0000 - loss: 0.0411 - segmentation_accuracy: 1.0000
+
+Federated Learning Round 3
+Training on client 1
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 281s 2s/step - classification_accuracy: 0.9639 - loss: 0.1680 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 247s 2s/step - classification_accuracy: 0.9966 - loss: 0.0454 - segmentation_accuracy: 1.0000
+Training on client 2
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 274s 2s/step - classification_accuracy: 1.0000 - loss: 0.0371 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 255s 2s/step - classification_accuracy: 1.0000 - loss: 0.0333 - segmentation_accuracy: 1.0000
+Training on client 3
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 284s 2s/step - classification_accuracy: 1.0000 - loss: 0.0371 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 253s 2s/step - classification_accuracy: 1.0000 - loss: 0.0333 - segmentation_accuracy: 1.0000
+
+Federated Learning Round 4
+Training on client 1
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 283s 3s/step - classification_accuracy: 0.9733 - loss: 0.1154 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 264s 3s/step - classification_accuracy: 0.9985 - loss: 0.0337 - segmentation_accuracy: 1.0000
+Training on client 2
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 293s 3s/step - classification_accuracy: 1.0000 - loss: 0.0300 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 266s 3s/step - classification_accuracy: 1.0000 - loss: 0.0268 - segmentation_accuracy: 1.0000
+Training on client 3
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 302s 3s/step - classification_accuracy: 1.0000 - loss: 0.0300 - segmentation_accuracy: 1.0000    
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 269s 3s/step - classification_accuracy: 1.0000 - loss: 0.0268 - segmentation_accuracy: 1.0000
+
+Federated Learning Round 5
+Training on client 1
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 303s 3s/step - classification_accuracy: 0.9726 - loss: 0.0904 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 392s 4s/step - classification_accuracy: 0.9964 - loss: 0.0341 - segmentation_accuracy: 1.0000
+Training on client 2
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 348s 3s/step - classification_accuracy: 1.0000 - loss: 0.0239 - segmentation_accuracy: 1.0000  
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 323s 3s/step - classification_accuracy: 1.0000 - loss: 0.0212 - segmentation_accuracy: 1.0000
+Training on client 3
+Epoch 1/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 373s 3s/step - classification_accuracy: 1.0000 - loss: 0.0239 - segmentation_accuracy: 1.0000    
+Epoch 2/2
+104/104 ━━━━━━━━━━━━━━━━━━━━ 329s 3s/step - classification_accuracy: 1.0000 - loss: 0.0211 - segmentation_accuracy: 1.0000
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format 
+is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.                                                                                            
+Final model saved in : training_outputs\models\final_federated_model.h5
+312/312 ━━━━━━━━━━━━━━━━━━━━ 840s 3s/step 
+
+Training pipeline completed successfully!
+All results saved in: training_outputs
