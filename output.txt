@@ -1,23 +1,13 @@
 python main.py
-PS C:\Users\padma\OneDrive - vitap.ac.in\cappy> python main.py
 2024-10-29 10:26:05.460945: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different 
-numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.                                                                                           2024-10-29 10:26:07.034019: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different 
-numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.                                                                                           
+numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.                                                                                       
 Loading and preprocessing data...
-C:\Users\padma\OneDrive - vitap.ac.in\cappy\data_loader.py:204: FutureWarning: 
-
-Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set
- `legend=False` for the same effect.                                                                                            
-  sns.countplot(x=labels, palette=palette)
 Dataset statistics saved to training_outputs\dataset_stats\dataset_statistics.txt
 Data preprocessing completed!
 
 Training and evaluating models...
 
-Training ResNet50
-2024-10-29 10:45:08.478330: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use avai
-lable CPU instructions in performance-critical operations.                                                                      To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler f
-lags.                                                                                                                           Epoch 1/10
+Training ResNet50                                                                                                                Epoch 1/10
 200/200 ━━━━━━━━━━━━━━━━━━━━ 935s 5s/step - classification_accuracy: 0.8634 - loss: 0.7125 - segmentation_accuracy: 0.5260 - val
 _classification_accuracy: 0.8960 - val_loss: 0.6073 - val_segmentation_accuracy: 0.9619                                         Epoch 2/10
 200/200 ━━━━━━━━━━━━━━━━━━━━ 656s 3s/step - classification_accuracy: 0.9047 - loss: 0.4801 - segmentation_accuracy: 0.9967 - val
@@ -178,8 +168,7 @@ Epoch 1/2
 104/104 ━━━━━━━━━━━━━━━━━━━━ 373s 3s/step - classification_accuracy: 1.0000 - loss: 0.0239 - segmentation_accuracy: 1.0000    
 Epoch 2/2
 104/104 ━━━━━━━━━━━━━━━━━━━━ 329s 3s/step - classification_accuracy: 1.0000 - loss: 0.0211 - segmentation_accuracy: 1.0000
-WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format 
-is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.                                                                                            
+                                                                                        
 Final model saved in : training_outputs\models\final_federated_model.h5
 312/312 ━━━━━━━━━━━━━━━━━━━━ 840s 3s/step 
 
